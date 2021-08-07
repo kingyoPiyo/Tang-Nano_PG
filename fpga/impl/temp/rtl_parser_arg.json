@@ -1,0 +1,52 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/led_tikatika.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/period_counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/reg_map.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/sync_reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart2reg.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/ip/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/impl/temp/rtl_parser.result",
+ "Top" : "pg_top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

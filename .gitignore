@@ -1,0 +1,9 @@
+.vscode/
+*.user
+fpga/impl/pnr/*
+!fpga/impl/pnr/*.cfg
+!fpga/impl/pnr/*.fs
+fpga/impl/synthesize/*
+!fpga/impl/synthesize/*.cfg
+fpga/impl/gwsynthesis/*
+!fpga/impl/gwsynthesis/*.cfg
