@@ -1,4 +1,4 @@
 pc_tool/* linguist-documentation
 sch/* linguist-documentation
-fpga/impl/* linguist-documentation
+fpga/impl/* linguist-vendored
 fpga/src/ip/* linguist-vendored
