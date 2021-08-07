@@ -4,7 +4,29 @@ Pulse Generator for Tang-Nano FPGA.
 GW1N-1 FPGAチップを搭載した[Tang Nano FPGAボード](https://jp.seeedstudio.com/Sipeed-Tang-Nano-FPGA-board-powered-by-GW1N-1-FPGA-p-4304.html)で動作するパルスジェネレータです。  
   
 開発中・・  
+  
+## Pinout
+|  Tang-Nano Pin#  | Description |
+| ------ | ---- |
+| 42 | CH3 out |
+| 43 | CH2 out |
+| 44 | CH1 out |
+| 45 | CH0 out |
+  
 
+## Register Map
+|  Address (HEX)  | Description |
+| ------ | ---- |
+| 0000 | Period [10ns] |
+| 0002 | CH0 high timing [10ns] |
+| 0004 | CH0 low timing [10ns] |
+| 0006 | CH1 high timing [10ns] |
+| 0008 | CH1 low timing [10ns] |
+| 000A | CH2 high timing [10ns] |
+| 000C | CH2 low timing [10ns] |
+| 000E | CH3 high timing [10ns] |
+| 0010 | CH3 low timing [10ns] |
+  
 ## UART Format
 Baudrate : 115,200bps  
 ### MOSI(PC -> FPGA)
