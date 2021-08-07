@@ -49,5 +49,10 @@ Baudrate : 115,200bps
 | 5 | Not use (0x00) |
 | 6 | Not use (0x00) |
 
+## ToDo
+* 繰り返し波形（クロック）生成機能追加
+* レジスタ更新タイミングの同時性確保
+* UART周りのコード整理
+
 # 参考
 - Tang NanoのFPGAとPC間でUART通信をする https://qiita.com/ciniml/items/05ac7fd2515ceed3f88d
