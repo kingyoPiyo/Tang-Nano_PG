@@ -12,8 +12,8 @@ module uart_tx (
     output          o_txempty
     );
     
-    parameter   DIV_WID = 7;
-    parameter   DIV_CNT = 86;  // i_clk = 10MHz, miso_clk = 115,200bps
+    parameter   DIV_WID = 10;       // Prescaler bit width
+    parameter   DIV_CNT = 10'd520;  // (10MHz / 19,200bps) - 1
     
     reg     [9:0]       data;       // startbit + data + stopbit
     reg                 txempty;
@@ -25,8 +25,23 @@ module uart_tx (
     reg     [3:0]       bitCnt;
 
     assign start = (txempty & i_txen);
-    assign fin  = (bitCnt == 4'd10 & div == 9'd0);
+    assign fin  = (bitCnt == 4'd10 & div == {DIV_WID{1'b0}});
     assign dt_txpls = (~txempty & div == DIV_CNT);
+
+    /* div counter */
+    always @(posedge i_clk or negedge i_rst_n) begin
+        if (~i_rst_n)
+            div <= {DIV_WID{1'b0}};
+        else if (start)
+            div <= DIV_CNT;
+        else if (~txempty) begin
+            if (div == {DIV_WID{1'b0}})
+                div <= DIV_CNT;
+            else
+                div <= div - {{(DIV_WID-1){1'b0}},1'b1};
+        end else
+            div <= {DIV_WID{1'b0}};
+    end
     
     /* txempty control */
     always @(posedge i_clk or negedge i_rst_n) begin
@@ -56,21 +71,6 @@ module uart_tx (
             bitCnt <= 4'd0;
         else if (dt_txpls)
             bitCnt <= bitCnt + 4'd1;
-    end
-
-    /* div counter */
-    always @(posedge i_clk or negedge i_rst_n) begin
-        if (~i_rst_n)
-            div <= 0;
-        else if (start)
-            div <= DIV_CNT;
-        else if (~txempty) begin
-            if (div == 0)
-                div <= DIV_CNT;
-            else
-                div <= div - 1;
-        end else
-            div <= 0;
     end
 
     /* Data send */

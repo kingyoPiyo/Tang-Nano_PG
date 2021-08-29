@@ -11,8 +11,8 @@ module uart_rx (
     output          o_dataen
     );
     
-    parameter   DIV_WID = 7;
-    parameter   DIV_CNT = 7'd86;
+    parameter   DIV_WID = 10;       // Prescaler bit width
+    parameter   DIV_CNT = 10'd520;  // (10MHz / 19,200bps) - 1
     
     reg     [2:0]   mosi_ff;        // edge detect FF
     wire            start;          // start
@@ -54,17 +54,17 @@ module uart_rx (
     /* div counter */
     always @(posedge i_clk or negedge i_rst_n) begin
         if (~i_rst_n)
-            div <= 0;
+            div <= {DIV_WID{1'b0}};
         else if (start)
             div <= { 1'b0, DIV_CNT[DIV_WID-1:1] };  // 1/2
         else if (busy) begin
-            if (div == 0) begin
+            if (div == {DIV_WID{1'b0}}) begin
                 div <= DIV_CNT;
             end else begin
-                div <= div - 1;
+                div <= div - {{(DIV_WID-1){1'b0}},1'b1};
             end
         end else begin
-            div <= 0;
+            div <= {DIV_WID{1'b0}};
         end
     end
     
@@ -80,7 +80,7 @@ module uart_rx (
     end
     
     /* data latch trig */
-    assign dt_latch = (busy) & (div == 9'd0) ? 1'b1 : 1'b0;
+    assign dt_latch = (busy) & (div == {DIV_WID{1'b0}}) ? 1'b1 : 1'b0;
     
     /* seri para FF */
     always @(posedge i_clk or negedge i_rst_n) begin

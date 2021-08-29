@@ -1,11 +1,19 @@
 {
  "Files" : [
   {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/ip/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/led_tikatika.v",
    "Type" : "verilog"
   },
   {
    "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/period_counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
    "Type" : "verilog"
   },
   {
@@ -21,23 +29,15 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart2reg.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart_rx.v",
    "Type" : "verilog"
   },
   {
    "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart_tx.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart2reg.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/ip/gowin_rpll/gowin_rpll.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
    "Type" : "verilog"
   }
  ],

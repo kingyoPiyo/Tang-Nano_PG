@@ -33,7 +33,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 81,
+    "InstLine" : 82,
     "InstName" : "uart2reg",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/uart2reg.v",
     "ModuleLine" : 6,
@@ -59,7 +59,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 95,
+    "InstLine" : 96,
     "InstName" : "reg_map",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/reg_map.v",
     "ModuleLine" : 6,
@@ -67,7 +67,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 116,
+    "InstLine" : 117,
     "InstName" : "period_counter",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/period_counter.v",
     "ModuleLine" : 6,
@@ -75,7 +75,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 126,
+    "InstLine" : 127,
     "InstName" : "pgo0",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
     "ModuleLine" : 6,
@@ -83,7 +83,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 134,
+    "InstLine" : 135,
     "InstName" : "pgo1",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
     "ModuleLine" : 6,
@@ -91,7 +91,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 142,
+    "InstLine" : 143,
     "InstName" : "pgo2",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
     "ModuleLine" : 6,
@@ -99,7 +99,7 @@
    },
    {
     "InstFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_top.v",
-    "InstLine" : 150,
+    "InstLine" : 151,
     "InstName" : "pgo3",
     "ModuleFile" : "D:/documents/GitHub/Tang-Nano_PG/fpga/src/pg_oneshot.v",
     "ModuleLine" : 6,
