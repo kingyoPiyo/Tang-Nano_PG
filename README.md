@@ -28,7 +28,7 @@ GW1N-1 FPGAチップを搭載した[Tang Nano FPGAボード](https://jp.seeedstu
 | 0010 | CH3 low timing [10ns] |
   
 ## UART Format
-Baudrate : 115,200bps  
+Baudrate : 19,200bps  
 ### MOSI(PC -> FPGA)
 |  Byte  | Description |
 | ------ | ---- |
